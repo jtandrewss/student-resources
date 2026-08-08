@@ -1,9 +1,61 @@
-<body>
-<h1>Student Academic Resources</h1>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Academic Resources</title>
 <h2>SHRI G S INSTITUTE OF TECHNOLOGY & SCIENCE, INDORE MP INDIA</h1>
   <h2>Department of Applied Physics & Optoelectronics</h1>
 <div id="List of Resources"></div>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
 
-<script src="js/app.js"></script>
+    .header {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
 
+    .header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .viewer {
+        width: 100%;
+        height: calc(100vh - 180px);
+    }
+
+    .viewer iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="header.jpg" alt="Header Image">
+</div>
+
+<div class="viewer">
+    <iframe
+        src="https://drive.google.com/file/d/GOOGLE_DRIVE_FILE_ID/preview"
+        allow="autoplay">
+    </iframe>
+</div>
+
+</body>
+</html>
 </body>
